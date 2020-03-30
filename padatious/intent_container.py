@@ -73,8 +73,8 @@ class IntentContainer(object):
         entity_traindata = {}
         intent_traindata = {}
 
-        # workaround: load training data for both entities and intents since padaos regex needs it for (re)compilation
-        # until TODO is cleared
+        # workaround: load training data for both entities and intents since
+	# padaos regex needs it for (re)compilation until TODO is cleared
         for f in os.listdir(self.cache_dir):
             if f.endswith('.entity'):
                 entity_name = f[0:f.find('.entity')]
